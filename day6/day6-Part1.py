@@ -4,7 +4,7 @@ fs.close()
 
 def func():
     for ind in range(0, len(data)):
-        lst = [data[ind], data[ind + 1], data[ind + 2], data[ind + 3]]
+        lst = [data[ind + k] for k in range(4)]
         sets = list(set(lst))
         lst.sort()
         sets.sort()
